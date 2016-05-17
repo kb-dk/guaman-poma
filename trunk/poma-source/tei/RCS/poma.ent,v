@@ -1,0 +1,122 @@
+head	1.1;
+access;
+symbols;
+locks
+	slu:1.1; strict;
+comment	@# @;
+
+
+1.1
+date	2007.01.16.08.08.40;	author slu;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@    <!ENTITY AElig   "&#198;" > <!-- capital AE diphthong (ligature) -->
+    <!ENTITY Aacute  "&#193;" > <!-- capital A, acute accent -->
+    <!ENTITY Acirc   "&#194;" > <!-- capital A, circumflex accent -->
+    <!ENTITY Agrave  "&#192;" > <!-- capital A, grave accent -->
+    <!ENTITY Aring   "&#197;" > <!-- capital A, ring -->
+    <!ENTITY Atilde  "&#195;" > <!-- capital A, tilde -->
+    <!ENTITY Auml    "&#196;" > <!-- capital A, dieresis or umlaut mark -->
+    <!ENTITY Ccedil  "&#199;" > <!-- capital C, cedilla -->
+    <!ENTITY ETH     "&#208;" > <!-- capital Eth, Icelandic -->
+    <!ENTITY Eacute  "&#201;" > <!-- capital E, acute accent -->
+    <!ENTITY Ecirc   "&#202;" > <!-- capital E, circumflex accent -->
+    <!ENTITY Egrave  "&#200;" > <!-- capital E, grave accent -->
+    <!ENTITY Euml    "&#203;" > <!-- capital E, dieresis or umlaut mark -->
+    <!ENTITY Iacute  "&#205;" > <!-- capital I, acute accent -->
+    <!ENTITY Icirc   "&#206;" > <!-- capital I, circumflex accent -->
+    <!ENTITY Igrave  "&#204;" > <!-- capital I, grave accent -->
+    <!ENTITY Iuml    "&#207;" > <!-- capital I, dieresis or umlaut mark -->
+    <!ENTITY Ntilde  "&#209;" > <!-- capital N, tilde -->
+    <!ENTITY Oacute  "&#211;" > <!-- capital O, acute accent -->
+    <!ENTITY Ocirc   "&#212;" > <!-- capital O, circumflex accent -->
+    <!ENTITY Ograve  "&#210;" > <!-- capital O, grave accent -->
+    <!ENTITY Oslash  "&#216;" > <!-- capital O, slash -->
+    <!ENTITY Otilde  "&#213;" > <!-- capital O, tilde -->
+    <!ENTITY Ouml    "&#214;" > <!-- capital O, dieresis or umlaut mark -->
+    <!ENTITY THORN   "&#222;" > <!-- capital THORN, Icelandic -->
+    <!ENTITY Uacute  "&#218;" > <!-- capital U, acute accent -->
+    <!ENTITY Ucirc   "&#219;" > <!-- capital U, circumflex accent -->
+    <!ENTITY Ugrave  "&#217;" > <!-- capital U, grave accent -->
+    <!ENTITY Uuml    "&#220;" > <!-- capital U, dieresis or umlaut mark -->
+    <!ENTITY Yacute  "&#221;" > <!-- capital Y, acute accent -->
+    <!ENTITY aacute  "&#225;" > <!-- small a, acute accent -->
+    <!ENTITY acirc   "&#226;" > <!-- small a, circumflex accent -->
+    <!ENTITY acute   "&#180;" > <!-- acute accent -->
+    <!ENTITY aelig   "&#230;" > <!-- small ae diphthong (ligature) -->
+    <!ENTITY agrave  "&#224;" > <!-- small a, grave accent -->
+    <!ENTITY aring   "&#229;" > <!-- small a, ring -->
+    <!ENTITY atilde  "&#227;" > <!-- small a, tilde -->
+    <!ENTITY auml    "&#228;" > <!-- small a, dieresis or umlaut mark -->
+    <!ENTITY brvbar  "&#166;" > <!-- broken (vertical) bar -->
+    <!ENTITY ccedil  "&#231;" > <!-- small c, cedilla -->
+    <!ENTITY cedil   "&#184;" > <!-- cedilla -->
+    <!ENTITY cent    "&#162;" > <!-- cent sign -->
+    <!ENTITY copy    "&#169;" > <!-- copyright sign -->
+    <!ENTITY curren  "&#164;" > <!-- general currency sign -->
+    <!ENTITY deg     "&#176;" > <!-- degree sign -->
+    <!ENTITY divide  "&#247;" > <!-- divide sign -->
+    <!ENTITY eacute  "&#233;" > <!-- small e, acute accent -->
+    <!ENTITY ecirc   "&#234;" > <!-- small e, circumflex accent -->
+    <!ENTITY egrave  "&#232;" > <!-- small e, grave accent -->
+    <!ENTITY eth     "&#240;" > <!-- small eth, Icelandic -->
+    <!ENTITY euml    "&#235;" > <!-- small e, dieresis or umlaut mark -->
+    <!ENTITY frac12  "&#189;" > <!-- fraction one-half -->
+    <!ENTITY frac14  "&#188;" > <!-- fraction one-quarter -->
+    <!ENTITY frac34  "&#190;" > <!-- fraction three-quarters -->
+    <!ENTITY iacute  "&#237;" > <!-- small i, acute accent -->
+    <!ENTITY icirc   "&#238;" > <!-- small i, circumflex accent -->
+    <!ENTITY iexcl   "&#161;" > <!-- inverted exclamation mark -->
+    <!ENTITY igrave  "&#236;" > <!-- small i, grave accent -->
+    <!ENTITY iquest  "&#191;" > <!-- inverted question mark -->
+    <!ENTITY iuml    "&#239;" > <!-- small i, dieresis or umlaut mark -->
+    <!ENTITY laquo   "&#171;" > <!-- angle quotation mark, left -->
+    <!ENTITY macr    "&#175;" > <!-- macron -->
+    <!ENTITY micro   "&#181;" > <!-- micro sign -->
+    <!ENTITY middot  "&#183;" > <!-- middle dot -->
+    <!ENTITY nbsp    "&#160;" > <!-- no-break space -->
+    <!ENTITY not     "&#172;" > <!-- not sign -->
+    <!ENTITY ntilde  "&#241;" > <!-- small n, tilde -->
+    <!ENTITY oacute  "&#243;" > <!-- small o, acute accent -->
+    <!ENTITY ocirc   "&#244;" > <!-- small o, circumflex accent -->
+    <!ENTITY ograve  "&#242;" > <!-- small o, grave accent -->
+    <!ENTITY ordf    "&#170;" > <!-- ordinal indicator, feminine -->
+    <!ENTITY ordm    "&#186;" > <!-- ordinal indicator, masculine -->
+    <!ENTITY oslash  "&#248;" > <!-- small o, slash -->
+    <!ENTITY otilde  "&#245;" > <!-- small o, tilde -->
+    <!ENTITY ouml    "&#246;" > <!-- small o, dieresis or umlaut mark -->
+    <!ENTITY para    "&#182;" > <!-- pilcrow (paragraph sign) -->
+    <!ENTITY plusmn  "&#177;" > <!-- plus-or-minus sign -->
+    <!ENTITY pound   "&#163;" > <!-- pound sterling sign -->
+    <!ENTITY raquo   "&#187;" > <!-- angle quotation mark, right -->
+    <!ENTITY reg     "&#174;" > <!-- registered sign -->
+    <!ENTITY sect    "&#167;" > <!-- section sign -->
+    <!ENTITY shy     "&#173;" > <!-- soft hyphen -->
+    <!ENTITY sup1    "&#185;" > <!-- superscript one -->
+    <!ENTITY sup2    "&#178;" > <!-- superscript two -->
+    <!ENTITY sup3    "&#179;" > <!-- superscript three -->
+    <!ENTITY szlig   "&#223;" > <!-- small sharp s, German (sz ligature) -->
+    <!ENTITY thorn   "&#254;" > <!-- small thorn, Icelandic -->
+    <!ENTITY times   "&#215;" > <!-- multiply sign -->
+    <!ENTITY uacute  "&#250;" > <!-- small u, acute accent -->
+    <!ENTITY ucirc   "&#251;" > <!-- small u, circumflex accent -->
+    <!ENTITY ugrave  "&#249;" > <!-- small u, grave accent -->
+    <!ENTITY uml     "&#168;" > <!-- umlaut (dieresis) -->
+    <!ENTITY uuml    "&#252;" > <!-- small u, dieresis or umlaut mark -->
+    <!ENTITY yacute  "&#253;" > <!-- small y, acute accent -->
+    <!ENTITY yen     "&#165;" > <!-- yen sign -->
+    <!ENTITY yuml    "&#255;" > <!-- small y, dieresis or umlaut mark -->
+
+
+@

@@ -1,0 +1,35 @@
+A. These directories contains
+
+   1. The source files needed to build the web edition of Guaman Poma,
+      Nueva corónica y buen gobierno (1615). The source files consists of
+
+      tei/Poma-parsed.xml
+      poma-mets.xml
+      toc.xml.en
+      toc.xml.es
+      tables-of-images.xml
+      manus-page-id.xml
+
+   2. The actual machinery for presenting the content, which is mostly
+      written in xslt. Most important is
+
+      make-page.xsl
+
+   3. Various scripts, build.sh and xslt-scripts, which generates the
+      actual service contents.
+
+   4. Related information of different kinds situated in
+
+      www-pages
+
+B. How to build
+
+   After revisions of A.1, just run build.sh
+
+C. Deployment
+
+   Currently the content of this directory is basically copied to a
+   web server where the java/jsp part of expects to find it and be
+   able to retrieve it using HTTP. Which today is
+
+   webext.kb.dk:/data1/kb/httpd/img.kb.dk.80/docs/mets/poma/
