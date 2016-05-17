@@ -26,10 +26,4 @@ B. How to build
 
    After revisions of A.1, just run build.sh
 
-C. Deployment
 
-   Currently the content of this directory is basically copied to a
-   web server where the java/jsp part of expects to find it and be
-   able to retrieve it using HTTP. Which today is
-
-   webext.kb.dk:/data1/kb/httpd/img.kb.dk.80/docs/mets/poma/

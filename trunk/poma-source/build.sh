@@ -1,5 +1,7 @@
 #!/bin/sh
 
+DEST="../src/main/webapp/data"
+
 # xsltproc images-generator.xsl poma-mets.xml
 
 xsltproc --param lang "'en'" --param mode "'text'" create-html-list.xsl  \
@@ -16,3 +18,5 @@ xsltproc --param lang "'es'" --param mode "'image'" create-html-list.xsl  \
 
 xsltproc render-pages.xsl tei/Poma-parsed.xml
 
+mkdir -p "$DEST"
+cp -r images pages www-files $DEST

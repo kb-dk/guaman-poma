@@ -1,0 +1,1404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+  <head>
+    <title/>
+    <script language="javascript" type="text/javascript">
+var labels = new Array();
+var id = new Array();
+var oldString ='';
+    
+var currentlyOpen = &quot;&quot;;
+
+function openDisplay(divID) {
+   if(currentlyOpen == &quot;&quot;) {
+      currentlyOpen = divID;
+      document.getElementById(divID).style.display = &quot;block&quot;;
+   } else if(currentlyOpen == divID) {
+      closeDisplay(currentlyOpen);
+      currentlyOpen=&quot;&quot;;
+   } else {
+      closeDisplay(currentlyOpen);
+      currentlyOpen = divID;
+      document.getElementById(divID).style.display = &quot;block&quot;;
+   }
+}
+
+function closeDisplay(divID) {
+   document.getElementById(divID).style.display = &quot;none&quot;;
+}
+    
+  </script>
+  </head>
+  <body>
+    <ul>
+      <li id="id3011529">
+        <a href="ntitlepage.xml">
+                0. Portada
+              </a>
+      </li>
+      <li id="id3011539">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3011539')">
+	  +
+	</a>
+        <a href="n1.xml">
+                1. El primer nueva corónica (1-13)
+              </a>
+        <ul id="id3011539" style="display:none; list-style-type:none">
+          <li id="id3011556">
+            <a href="n1.xml">La utilidad de esta crónica, pág. 1</a>
+          </li>
+          <li id="id3011568">
+            <a href="n4.xml">Carta del autor al papa, pág. 4</a>
+          </li>
+          <li id="id3011580">
+            <a href="n5.xml">Carta del padre del autor al rey, pág. 5</a>
+          </li>
+          <li id="id3011592">
+            <a href="n8.xml">Carta del autor al rey Felipe, pág. 8</a>
+          </li>
+          <li id="id3011761">
+            <a href="n11.xml">Prólogo al lector cristiano, pág. 11</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3011776">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3011776')">
+	  +
+	</a>
+        <a href="n14.xml">
+                2. “Cómo Dios ordenó la dicha historia” (14-21)
+              </a>
+        <ul id="id3011776" style="display:none; list-style-type:none">
+          <li id="id3011792">
+            <a href="n15.xml">El primer comienzo de este dicho libro, pág. 15</a>
+          </li>
+          <li id="id3011804">
+            <a href="n18.xml">El padre Martín de Ayala, muy gran santo hombre, pág. 18</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3011819">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3011819')">
+	  +
+	</a>
+        <a href="n22.xml">
+                3. El capítulo de las edades del mundo (22-32)
+              </a>
+        <ul id="id3011819" style="display:none; list-style-type:none">
+          <li id="id3011835">
+            <a href="n23.xml">La primera edad del mundo: Adán, Eva y sus descendientes, pág. 23</a>
+          </li>
+          <li id="id3011849">
+            <a href="n25.xml">La segunda edad del mundo: Noé y el diluvio, pág. 25</a>
+          </li>
+          <li id="id3011862">
+            <a href="n27.xml">La tercera edad del mundo: Abrahám y sus descendientes, pág. 27</a>
+          </li>
+          <li id="id3011875">
+            <a href="n29.xml">La cuarta edad del mundo: desde el rey David, pág. 29</a>
+          </li>
+          <li id="id3011888">
+            <a href="n31.xml">La quinta edad del mundo: el nacimiento de Jesucristo, pág. 31</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3011903">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3011903')">
+	  +
+	</a>
+        <a href="n33.xml">
+                4. El capítulo de los papas y sus reinados (33-47)
+              </a>
+        <ul id="id3011903" style="display:none; list-style-type:none">
+          <li id="id3011919">
+            <a href="n34.xml">Primer comienzo e historia del papado, pág. 34</a>
+          </li>
+          <li id="id3053722">
+            <a href="n43.xml">El descubrimiento de las Indias del Perú, pág. 43</a>
+          </li>
+          <li id="id3053735">
+            <a href="n47.xml">La llegada de los españoles en Tumbes, pág. 47</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3053750">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3053750')">
+	  +
+	</a>
+        <a href="n48.xml">
+                5. El capítulo de las edades de los indios (48-78)
+              </a>
+        <ul id="id3053750" style="display:none; list-style-type:none">
+          <li id="id3053766">
+            <a href="n49.xml">La primera edad de los indios, Vari Vira Cocha Runa, pág. 49</a>
+          </li>
+          <li id="id3053780">
+            <a href="n52.xml">Prólogo, pág. 52</a>
+          </li>
+          <li id="id3053790">
+            <a href="n54.xml">La segunda edad de los indios, Vari Runa, pág. 54</a>
+          </li>
+          <li id="id3053804">
+            <a href="n56.xml">Prólogo, pág. 56</a>
+          </li>
+          <li id="id3053814">
+            <a href="n58.xml">La tercera edad de los indios, Purun Runa, pág. 58</a>
+          </li>
+          <li id="id3053828">
+            <a href="n62.xml">Prólogo, pág. 62</a>
+          </li>
+          <li id="id3053839">
+            <a href="n64.xml">La cuarta edad de los indios, Auca Runa, pág. 64</a>
+          </li>
+          <li id="id3053853">
+            <a href="n78.xml">Prólogo, pág. 78</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3053866">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3053866')">
+	  +
+	</a>
+        <a href="n79.xml">
+                6. El capítulo de los Yngas (79-119)
+              </a>
+        <ul id="id3053866" style="display:none; list-style-type:none">
+          <li id="id3053882">
+            <a href="n80.xml">La historia de los primeros Yngas, pág. 80</a>
+          </li>
+          <li id="id3053894">
+            <a href="n84.xml">El origen de la primera generación de los Yngas, pág. 84</a>
+          </li>
+          <li id="id3053908">
+            <a href="n87.xml">El primer Ynga, Mango Capac Ynga, pág. 87</a>
+          </li>
+          <li id="id3053921">
+            <a href="n89.xml">El segundo Ynga, Sinche Roca Ynga, pág. 89</a>
+          </li>
+          <li id="id3011609">
+            <a href="n91.xml">El nacimiento de Jesucristo, Salvador del mundo, pág. 91</a>
+          </li>
+          <li id="id3011622">
+            <a href="n93.xml">Los milagros que Dios hizo en este reino, pág. 93</a>
+          </li>
+          <li id="id3011634">
+            <a href="n97.xml">El tercer Ynga, Lloqui Yupanqui Ynga, pág. 97</a>
+          </li>
+          <li id="id3011647">
+            <a href="n99.xml">El cuarto Ynga, Mayta Capac Ynga, pág. 99</a>
+          </li>
+          <li id="id3011659">
+            <a href="n101.xml">El quinto Ynga, Capac Yupanqui Ynga, pág. 101</a>
+          </li>
+          <li id="id3011672">
+            <a href="n103.xml">El sexto Ynga, Ynga Roca, pág. 103</a>
+          </li>
+          <li id="id3011684">
+            <a href="n105.xml">El séptimo Ynga, Yauar Uacac Ynga, pág. 105</a>
+          </li>
+          <li id="id3011697">
+            <a href="n107.xml">El octavo Ynga, Uira Cocha Ynga, pág. 107</a>
+          </li>
+          <li id="id3011709">
+            <a href="n109.xml">El noveno Ynga, Pachacuti Ynga, pág. 109</a>
+          </li>
+          <li id="id3011721">
+            <a href="n111.xml">El décimo Ynga, Topa Ynga Yupanqui, pág. 111</a>
+          </li>
+          <li id="id3011734">
+            <a href="n113.xml">El undécimo Ynga, Huayna Capac Ynga, pág. 113</a>
+          </li>
+          <li id="id3011747">
+            <a href="n116.xml">El duodécimo Ynga, Topa Cuci Gualpa Huascar Ynga, pág. 116</a>
+          </li>
+          <li id="id3054237">
+            <a href="n119.xml">Al lector de los Yngas, pág. 119</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3054251">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3054251')">
+	  +
+	</a>
+        <a href="n120.xml">
+                 . El capítulo de las reinas, o quya (120-144)
+              </a>
+        <ul id="id3054251" style="display:none; list-style-type:none">
+          <li id="id3054267">
+            <a href="n121.xml">La primera quya, Mama Uaco, pág. 121</a>
+          </li>
+          <li id="id3054280">
+            <a href="n123.xml">La segunda quya, Chinbo Urma, pág. 123</a>
+          </li>
+          <li id="id3054292">
+            <a href="n125.xml">La tercera quya, Mama Cora Ocllo, pág. 125</a>
+          </li>
+          <li id="id3054305">
+            <a href="n127.xml">La cuarta quya, Chinbo Urma Mama Yachi, pág. 127</a>
+          </li>
+          <li id="id3054318">
+            <a href="n129.xml">La quinta quya, Chinbo Ucllo Mama Caua, pág. 129</a>
+          </li>
+          <li id="id3054330">
+            <a href="n131.xml">La sexta quya, Cuci Chinbo Mama Micay, pág. 131</a>
+          </li>
+          <li id="id3054343">
+            <a href="n133.xml">La séptima quya, Ipa Huaco Mama Machi, pág. 133</a>
+          </li>
+          <li id="id3054355">
+            <a href="n135.xml">La octava quya, Mama Yunto Cayan, pág. 135</a>
+          </li>
+          <li id="id3054368">
+            <a href="n137.xml">La novena quya, Mama Ana Uarque, pág. 137</a>
+          </li>
+          <li id="id3054380">
+            <a href="n139.xml">La décima quya, Mama Ocllo, pág. 139</a>
+          </li>
+          <li id="id3054393">
+            <a href="n141.xml">La undécima quya, Raua Ocllo, pág. 141</a>
+          </li>
+          <li id="id3054405">
+            <a href="n143.xml">La duodécima quya, Chuqui Llanto, pág. 143</a>
+          </li>
+          <li id="id3054417">
+            <a href="n144.xml">Prólogo a las lectoras andinas, pág. 144</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3054432">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3054432')">
+	  +
+	</a>
+        <a href="n145.xml">
+                8. El capítulo de los capitanes del Ynga y de sus grandes señoras (145-183)
+              </a>
+        <ul id="id3054432" style="display:none; list-style-type:none">
+          <li id="id3054449">
+            <a href="n146.xml">El primer capitán, Ynga Yupanqui, pág. 146</a>
+          </li>
+          <li id="id3054461">
+            <a href="n148.xml">El segundo capitán, Topa Amaro Ynga, pág. 148</a>
+          </li>
+          <li id="id3054474">
+            <a href="n150.xml">El tercer capitán, Cuci Uanan Chiri, pág. 150</a>
+          </li>
+          <li id="id3054487">
+            <a href="n152.xml">El cuarto capitán, Maytac Ynga, pág. 152</a>
+          </li>
+          <li id="id3054499">
+            <a href="n154.xml">El quinto capitán, Auqui Topa Ynga Yupanqui, pág. 154</a>
+          </li>
+          <li id="id3054512">
+            <a href="n156.xml">El sexto capitán, Otorongo Achachi Ynga, o Camac Ynga, pág. 156</a>
+          </li>
+          <li id="id3054525">
+            <a href="n158.xml">El séptimo capitán, Maytac Ynga, pág. 158</a>
+          </li>
+          <li id="id3054538">
+            <a href="n160.xml">El octavo capitán, Camac Ynga, pág. 160</a>
+          </li>
+          <li id="id3054550">
+            <a href="n162.xml">El noveno capitán, Urcon Ynga, pág. 162</a>
+          </li>
+          <li id="id3054562">
+            <a href="n164.xml">El décimo capitán, Challco Chima Ynga, pág. 164</a>
+          </li>
+          <li id="id3054575">
+            <a href="n166.xml">El undécimo capitán, Rumi Ñaui, pág. 166</a>
+          </li>
+          <li id="id3054588">
+            <a href="n168.xml">El duocécimo capitán, Guaman Chaua, pág. 168</a>
+          </li>
+          <li id="id3054600">
+            <a href="n170.xml">El décimotercero capitán, Ninarua, pág. 170</a>
+          </li>
+          <li id="id3054613">
+            <a href="n172.xml">El décimocuarto capitán, Mallco Castilla Pari, pág. 172</a>
+          </li>
+          <li id="id3054626">
+            <a href="n174.xml">El décimoquinto capitán, Malco Mullo, pág. 174</a>
+          </li>
+          <li id="id3054638">
+            <a href="n176.xml">La primera reina y señora, Poma Ualca, pág. 176</a>
+          </li>
+          <li id="id3054651">
+            <a href="n178.xml">La segunda señora, Mallquima, pág. 178</a>
+          </li>
+          <li id="id3054663">
+            <a href="n180.xml">La tercera señora, Umita Llama, pág. 180</a>
+          </li>
+          <li id="id3054676">
+            <a href="n182.xml">La cuarta señora, Mallco Guarmi Timtama, pág. 182</a>
+          </li>
+          <li id="id3054689">
+            <a href="n183.xml">Los capitanes asalariados por su Magestad, pág. 183</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3054704">
+        <a href="n184.xml">
+                9. El capítulo de las ordenanzas del Ynga (184-195)
+              </a>
+      </li>
+      <li id="id3054718">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3054718')">
+	  +
+	</a>
+        <a href="n195.xml">
+                10. El capítulo de la visita general, o censo (195-236)
+              </a>
+        <ul id="id3054718" style="display:none; list-style-type:none">
+          <li id="id3054734">
+            <a href="n197.xml">El primer grupo de edad de hombres, guerreros de treinta y tres años, pág. 197</a>
+          </li>
+          <li id="id3054748">
+            <a href="n199.xml">El segundo grupo de edad, viejos de sesenta años, pág. 199</a>
+          </li>
+          <li id="id3054761">
+            <a href="n201.xml">El tercer grupo de edad, viejos de ochenta años, pág. 201</a>
+          </li>
+          <li id="id3054774">
+            <a href="n203.xml">El cuarto grupo de edad, enfermos de cualquier edad, pág. 203</a>
+          </li>
+          <li id="id3054787">
+            <a href="n205.xml">El quinto grupo de edad, mandaderos de dieciocho años, pág. 205</a>
+          </li>
+          <li id="id3054800">
+            <a href="n207.xml">El sexto grupo de edad, jóvenes de doce años, pág. 207</a>
+          </li>
+          <li id="id3054813">
+            <a href="n209.xml">El séptimo grupo de edad, niños de nueve años, pág. 209</a>
+          </li>
+          <li id="id3054826">
+            <a href="n211.xml">El octavo grupo de edad, niños de cinco años, pág. 211</a>
+          </li>
+          <li id="id3054839">
+            <a href="n213.xml">El noveno grupo de edad, niños de un año, pág. 213</a>
+          </li>
+          <li id="id3054852">
+            <a href="n215.xml">El décimo grupo de edad, niños de un mes, pág. 215</a>
+          </li>
+          <li id="id3054865">
+            <a href="n218.xml">El primer grupo de edad de mujeres, tejedoras de treinta y tres años, pág. 218</a>
+          </li>
+          <li id="id3054878">
+            <a href="n220.xml">El segundo grupo de edad, viejas de cincuenta años, pág. 220</a>
+          </li>
+          <li id="id3054892">
+            <a href="n222.xml">El tercer grupo de edad, viejas de ochenta años, pág. 222</a>
+          </li>
+          <li id="id3054905">
+            <a href="n224.xml">El cuarto grupo de edad, enfermas de cualquier edad, pág. 224</a>
+          </li>
+          <li id="id3054918">
+            <a href="n226.xml">El quinto grupo de edad, doncellas de treinta y tres años, pág. 226</a>
+          </li>
+          <li id="id3054931">
+            <a href="n228.xml">El sexto grupo de edad, niñas de doce años, pág. 228</a>
+          </li>
+          <li id="id3054944">
+            <a href="n230.xml">El séptimo grupo de edad, niñas de nueve años, pág. 230</a>
+          </li>
+          <li id="id3054957">
+            <a href="n232.xml">El octavo grupo de edad, niñas de cinco años, pág. 232</a>
+          </li>
+          <li id="id3054970">
+            <a href="n234.xml">El noveno grupo de edad, niñas de un año, pág. 234</a>
+          </li>
+          <li id="id3054983">
+            <a href="n236.xml">El décimo grupo de edad, niñas de un mes, pág. 236</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3053928">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3053928')">
+	  +
+	</a>
+        <a href="n237.xml">
+                11. El capítulo de los meses del año (237-262) (Ver también cap. 37.)
+              </a>
+        <ul id="id3053928" style="display:none; list-style-type:none">
+          <li id="id3053945">
+            <a href="n239.xml">Enero, el mayor festejo, pág. 239</a>
+          </li>
+          <li id="id3053957">
+            <a href="n241.xml">Febrero, mes de vestirse taparrabos preciosos, pág. 241</a>
+          </li>
+          <li id="id3053970">
+            <a href="n243.xml">Marzo, mes de la maduración de la tierra, pág. 243</a>
+          </li>
+          <li id="id3053983">
+            <a href="n245.xml">Abril, el festejo del Ynga, pág. 245</a>
+          </li>
+          <li id="id3053995">
+            <a href="n247.xml">Mayo, gran búsqueda, pág. 247</a>
+          </li>
+          <li id="id3054007">
+            <a href="n249.xml">Junio, descanso de la cosecha, pág. 249</a>
+          </li>
+          <li id="id3054020">
+            <a href="n251.xml">Julio, mes de la inspección y distribución de las tierras, pág. 251</a>
+          </li>
+          <li id="id3054033">
+            <a href="n253.xml">Agosto, mes de romper tierras, pág. 253</a>
+          </li>
+          <li id="id3054045">
+            <a href="n254.xml">Septiembre, el festejo de la reina, o quya, pág. 255</a>
+          </li>
+          <li id="id3054058">
+            <a href="n257.xml">Octubre, el festejo principal, pág. 257</a>
+          </li>
+          <li id="id3054070">
+            <a href="n259.xml">Noviembre, mes de llevar difuntos, pág. 259</a>
+          </li>
+          <li id="id3054083">
+            <a href="n261.xml">Diciembre, la festividad del señor sol, pág. 261</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3054098">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3054098')">
+	  +
+	</a>
+        <a href="n263.xml">
+                12. El capítulo de los ídolos (263-288)
+              </a>
+        <ul id="id3054098" style="display:none; list-style-type:none">
+          <li id="id3054113">
+            <a href="n264.xml">Ídolos y waqas del Ynga, pág. 264</a>
+          </li>
+          <li id="id3054125">
+            <a href="n269.xml">Ídolos y waqas de los Chinchaysuyos, pág. 269</a>
+          </li>
+          <li id="id3054136">
+            <a href="n271.xml">Ídolos y waqas de los Andesuyos, pág. 271</a>
+          </li>
+          <li id="id3054147">
+            <a href="n273.xml">Ídolos y waqas de los Collasuyos, pág. 273</a>
+          </li>
+          <li id="id3054160">
+            <a href="n275.xml">Ídolos y waqas de los Condesuyos, pág. 275</a>
+          </li>
+          <li id="id3054171">
+            <a href="n276.xml">Los hechiceros de este reino, pág. 276</a>
+          </li>
+          <li id="id3054184">
+            <a href="n284.xml">Supersticiones y agüeros, pág. 284</a>
+          </li>
+          <li id="id3054196">
+            <a href="n287.xml">Procesiones, ayunos y penitencia, pág. 287</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3054210">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3054210')">
+	  +
+	</a>
+        <a href="n289.xml">
+                13. El capítulo de entierros (289-299)
+              </a>
+        <ul id="id3054210" style="display:none; list-style-type:none">
+          <li id="id3054226">
+            <a href="n290.xml">Entierros del Ynga, pág. 290</a>
+          </li>
+          <li id="id3055000">
+            <a href="n292.xml">Entierros de los Chinchaysuyos, pág. 292</a>
+          </li>
+          <li id="id3055012">
+            <a href="n294.xml">Entierros de los Andesuyos, pág. 294</a>
+          </li>
+          <li id="id3055025">
+            <a href="n296.xml">Entierros de los Collasuyos, pág. 296</a>
+          </li>
+          <li id="id3055037">
+            <a href="n298.xml">Entierros de los Condesuyos, pág. 298</a>
+          </li>
+          <li id="id3055049">
+            <a href="n299.xml">Entierros de los Yungas, pág. 299</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3055064">
+        <a href="n300.xml">
+                14. El capítulo de las vírgenes escogidas (300-302)
+              </a>
+      </li>
+      <li id="id3055078">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3055078')">
+	  +
+	</a>
+        <a href="n303.xml">
+                15. El capítulo de la justicia del Ynga (303-316)
+              </a>
+        <ul id="id3055078" style="display:none; list-style-type:none">
+          <li id="id3055094">
+            <a href="n305.xml">Cárceles de los Yngas, pág. 305</a>
+          </li>
+          <li id="id3055106">
+            <a href="n309.xml">Castigos para adúlteros, pág. 309</a>
+          </li>
+          <li id="id3055118">
+            <a href="n311.xml">Castigo para jóvenes fornicadores, pág. 311</a>
+          </li>
+          <li id="id3055130">
+            <a href="n313.xml">Castigo para los que matan con ponzoña, pág. 313</a>
+          </li>
+          <li id="id3055143">
+            <a href="n314.xml">Varios castigos, pág. 314</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3055157">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3055157')">
+	  +
+	</a>
+        <a href="n317.xml">
+                16. El capítulo de las fiestas (317-329)
+              </a>
+        <ul id="id3055157" style="display:none; list-style-type:none">
+          <li id="id3055172">
+            <a href="n319.xml">Canciones y música del Ynga, pág. 319</a>
+          </li>
+          <li id="id3055185">
+            <a href="n321.xml">Fiesta de los Yngas, pág. 321</a>
+          </li>
+          <li id="id3055197">
+            <a href="n323.xml">Fiesta de los Chinchaysuyos, pág. 323</a>
+          </li>
+          <li id="id3055209">
+            <a href="n325.xml">Fiesta de los Andesuyos, pág. 325</a>
+          </li>
+          <li id="id3055221">
+            <a href="n327.xml">Fiesta de los Collasuyos, pág. 327</a>
+          </li>
+          <li id="id3055233">
+            <a href="n329.xml">Fiesta de los Condesuyos, pág. 329</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3055248">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3055248')">
+	  +
+	</a>
+        <a href="n330.xml">
+                17. El capítulo de los bienes del Ynga (330-341)
+              </a>
+        <ul id="id3055248" style="display:none; list-style-type:none">
+          <li id="id3055264">
+            <a href="n332.xml">Los palacios, las riquezas y el cortejo del Ynga, pág. 332</a>
+          </li>
+          <li id="id3055277">
+            <a href="n338.xml">Los depósitos del Ynga, pág. 338</a>
+          </li>
+          <li id="id3055289">
+            <a href="n340.xml">Las obligaciones mutuas entre el Ynga y sus vasallos, pág. 340</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3055304">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3055304')">
+	  +
+	</a>
+        <a href="n342.xml">
+                18. El capítulo del gobierno del Ynga (342-369)
+              </a>
+        <ul id="id3055304" style="display:none; list-style-type:none">
+          <li id="id3055320">
+            <a href="n343.xml">El virrey del Ynga, pág. 343</a>
+          </li>
+          <li id="id3055332">
+            <a href="n345.xml">El alcalde de corte, pág. 345</a>
+          </li>
+          <li id="id3055344">
+            <a href="n347.xml">El alguacil mayor, pág. 347</a>
+          </li>
+          <li id="id3055356">
+            <a href="n349.xml">Corregidor de provincias, pág. 349</a>
+          </li>
+          <li id="id3055368">
+            <a href="n351.xml">Administrador de provincias, pág. 351</a>
+          </li>
+          <li id="id3055380">
+            <a href="n353.xml">Postillón mayor y menor, pág. 353</a>
+          </li>
+          <li id="id3055392">
+            <a href="n355.xml">Amojonadores, pág. 355</a>
+          </li>
+          <li id="id3055404">
+            <a href="n357.xml">Gobernador de los caminos reales, pág. 357</a>
+          </li>
+          <li id="id3055416">
+            <a href="n359.xml">Gobernador de los puentes, pág. 359</a>
+          </li>
+          <li id="id3055429">
+            <a href="n361.xml">Secretarios del Ynga, pág. 361</a>
+          </li>
+          <li id="id3055441">
+            <a href="n363.xml">Contador mayor, pág. 363</a>
+          </li>
+          <li id="id3055452">
+            <a href="n365.xml">Visitadores, pág. 365</a>
+          </li>
+          <li id="id3055464">
+            <a href="n367.xml">Consejo real, pág. 367</a>
+          </li>
+          <li id="id3055476">
+            <a href="n369.xml">Prólogo a los lectores cristianos españoles, pág. 369</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3055491">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3055491')">
+	  +
+	</a>
+        <a href="n370.xml">
+                19. El capítulo de la conquista española y las guerras civiles (370-437)
+              </a>
+        <ul id="id3055491" style="display:none; list-style-type:none">
+          <li id="id3055508">
+            <a href="n370.xml">Cómo se descubrieron las Indias del Perú, pág. 370</a>
+          </li>
+          <li id="id3055520">
+            <a href="n372.xml">Las primeras noticias de Guayna Capac Ynga de la llegada de los españoles, pág. 372</a>
+          </li>
+          <li id="id3055534">
+            <a href="n374.xml">Los descubrimientos del Mar del Sur y del Río de la Plata, pág. 374</a>
+          </li>
+          <li id="id3055548">
+            <a href="n378.xml">La primera embajada, de Huascar Ynga, en Tumbes, pág. 378</a>
+          </li>
+          <li id="id3406999">
+            <a href="n380.xml">El entierro de Guayna Capac Ynga en el Cuzco, pág. 380</a>
+          </li>
+          <li id="id3407010">
+            <a href="n382.xml">La segunda embajada, de Atagualpa Ynga, en Tumbes, pág. 382</a>
+          </li>
+          <li id="id3407023">
+            <a href="n387.xml">Atagualpa Ynga and Fray Vicente de Valverde en Cajamarca, pág. 387</a>
+          </li>
+          <li id="id3407037">
+            <a href="n388.xml">Enfrentamiento y masacre en Cajamarca, pág. 388</a>
+          </li>
+          <li id="id3407049">
+            <a href="n390.xml">La prisión y ejecución de Atagualpa Ynga, pág. 390</a>
+          </li>
+          <li id="id3407062">
+            <a href="n395.xml">Conquista española, resistencia de Mango Ynga y milagros divinos, pág. 395</a>
+          </li>
+          <li id="id3407076">
+            <a href="n411.xml">La primera visita general y el comienzo de las guerras civiles, pág. 411</a>
+          </li>
+          <li id="id3407089">
+            <a href="n413.xml">Las muertes de Pizarro y Almagro, pág. 413</a>
+          </li>
+          <li id="id3407102">
+            <a href="n417.xml">La llegada del primer virrey Vlasco Nuñes de Vela y la traición de Gonzalo Pizarro, pág. 417</a>
+          </li>
+          <li id="id3407116">
+            <a href="n420.xml">La llegada del presidente Pedro de la Gasca, pág. 420</a>
+          </li>
+          <li id="id3407129">
+            <a href="n429.xml">El presidente de la Gasca vence y ejecuta a Gonzalo Pizarro, pág. 429</a>
+          </li>
+          <li id="id3407143">
+            <a href="n431.xml">El alzamiento de Francisco Hernández Girón, pág. 431</a>
+          </li>
+          <li id="id3407156">
+            <a href="n435.xml">Don Martín Guaman Malqui de Ayala da batalla a Francisco Hernández Girón, pág. 435</a>
+          </li>
+          <li id="id3407170">
+            <a href="n437.xml">Fin de la rebelión contra la corona, pág. 437</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3407184">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3407184')">
+	  +
+	</a>
+        <a href="n438.xml">
+                20. El capítulo de “buen gobierno” (438-490)
+              </a>
+        <ul id="id3407184" style="display:none; list-style-type:none">
+          <li id="id3407200">
+            <a href="n439.xml">Don Antonio de Mendoza, el segundo virrey del Perú, pág. 439</a>
+          </li>
+          <li id="id3407214">
+            <a href="n441.xml">Don Andrés Hurtado de Mendoza, el tercer virrey del Perú, pág. 441</a>
+          </li>
+          <li id="id3407227">
+            <a href="n445.xml">El arzobispo Juan Solano casa a Sayri Topa Ynga con la reina doña Beatriz, quya, pág. 445</a>
+          </li>
+          <li id="id3407241">
+            <a href="n447.xml">Don Francisco de Toledo, el cuarto (en realidad, el quinto) virrey del Perú, y su gobierno, pág. 447</a>
+          </li>
+          <li id="id3407256">
+            <a href="n452.xml">La captura y ejecución de Topa Amaro Ynga, pág. 452</a>
+          </li>
+          <li id="id3407269">
+            <a href="n455.xml">La visita general de los indios de este reino, por el autor de esta crónica, pág. 455</a>
+          </li>
+          <li id="id3407283">
+            <a href="n461.xml">La muerte de don Francisco de Toledo, pág. 461</a>
+          </li>
+          <li id="id3407296">
+            <a href="n463.xml">La conquista de los Andesuyos y los Chunchos, pág. 463</a>
+          </li>
+          <li id="id3407308">
+            <a href="n465.xml">Don Martín Enríquez de Almanza, el quinto (en realidad, el sexto) virrey del Perú, pág. 465</a>
+          </li>
+          <li id="id3407323">
+            <a href="n467.xml">Don Fernando Torres y Portugal, el sexto (en realidad, el séptimo) virrey del Perú, pág. 467</a>
+          </li>
+          <li id="id3407337">
+            <a href="n469.xml">Don García Hurtado de Mendoza, el séptimo (en realidad, el octavo) virrey del Perú, pág. 469</a>
+          </li>
+          <li id="id3407352">
+            <a href="n471.xml">Don Luis de Velasco, el octavo (en realidad, el noveno) virrey del Perú, pág. 471</a>
+          </li>
+          <li id="id3407366">
+            <a href="n473.xml">Don Carlos Monterrey (en realidad, Gaspar de Zúñiga y Acevedo), el noveno (en realidad, el décimo) virrey del Perú, pág. 473</a>
+          </li>
+          <li id="id3407382">
+            <a href="n475.xml">Don Juan de Mendoza y Luna, el décimo (en realidad, el undécimo) virrey del Perú, pág. 475</a>
+          </li>
+          <li id="id3407396">
+            <a href="n477.xml">Obispos y arzobispos, pág. 477</a>
+          </li>
+          <li id="id3407408">
+            <a href="n479.xml">Comisarios generales, pág. 479</a>
+          </li>
+          <li id="id3407420">
+            <a href="n481.xml">Inquisidor de la Santa Inquisición, pág. 481</a>
+          </li>
+          <li id="id3407433">
+            <a href="n483.xml">Rector general de la Compañía de Jesús, pág. 483</a>
+          </li>
+          <li id="id3407445">
+            <a href="n485.xml">Santos hermitaños, pág. 485</a>
+          </li>
+          <li id="id3407457">
+            <a href="n487.xml">Abadesas mayores y señoras monjas de todas las órdenes, pág. 487</a>
+          </li>
+          <li id="id3407471">
+            <a href="n489.xml">Los señores gobernadores no defienden a los indios, pág. 489</a>
+          </li>
+          <li id="id3407484">
+            <a href="n490.xml">Prólogo a su Santidad y a su Magestad, pág. 490</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3407499">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3407499')">
+	  +
+	</a>
+        <a href="n491.xml">
+                21. El capítulo del corregimiento (491-560)
+              </a>
+        <ul id="id3407499" style="display:none; list-style-type:none">
+          <li id="id3407514">
+            <a href="n491.xml">Cómo los corregidores abusan de los indios, pág. 491</a>
+          </li>
+          <li id="id3407527">
+            <a href="n521.xml">La historia de los tenientes, jueces y escribanos, pág. 521</a>
+          </li>
+          <li id="id3407540">
+            <a href="n530.xml">El corregimiento de las minas, pág. 530</a>
+          </li>
+          <li id="id3407553">
+            <a href="n539.xml">Los mayordomos, pág. 539</a>
+          </li>
+          <li id="id3407564">
+            <a href="n542.xml">Los españoles itinerantes en el camino real, pág. 542</a>
+          </li>
+          <li id="id3407577">
+            <a href="n548.xml">Españoles, criollos y mestizos, pág. 548</a>
+          </li>
+          <li id="id3407590">
+            <a href="n559.xml">Prólogo a los itinerantes, mayordomos y mercaderes españoles, pág. 559</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3407605">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3407605')">
+	  +
+	</a>
+        <a href="n561.xml">
+                22. El capítulo de los encomenderos de los indios (561-573)
+              </a>
+        <ul id="id3407605" style="display:none; list-style-type:none">
+          <li id="id3407622">
+            <a href="n563.xml">No hay encomendero legítimo, pág. 563</a>
+          </li>
+          <li id="id3407634">
+            <a href="n566.xml">Los daños que hacen los encomenderos, pág. 566</a>
+          </li>
+          <li id="id3407647">
+            <a href="n569.xml">Los encomenderos, &quot;señores absolutos&quot;, pág. 569</a>
+          </li>
+          <li id="id3407659">
+            <a href="n573.xml">Prólogo a los encomenderos de los indios, pág. 573</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3407674">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3407674')">
+	  +
+	</a>
+        <a href="n574.xml">
+                23. El capítulo de los padres de doctrina (574-688)
+              </a>
+        <ul id="id3407674" style="display:none; list-style-type:none">
+          <li id="id3407690">
+            <a href="n576.xml">Ofensas y malos ejemplos de los padres de doctrina, pág. 576</a>
+          </li>
+          <li id="id3407703">
+            <a href="n585.xml">Permuta de doctrina entre padres, pág. 585</a>
+          </li>
+          <li id="id3407716">
+            <a href="n588.xml">Casamientos forzosos de feligreses andinos, pág. 588</a>
+          </li>
+          <li id="id3407728">
+            <a href="n591.xml">Malas confesiones, pág. 591</a>
+          </li>
+          <li id="id3407740">
+            <a href="n594.xml">Padres doctrinantes, “señores absolutos”, pág. 594</a>
+          </li>
+          <li id="id3407753">
+            <a href="n597.xml">Los castigos crueles de los padres de doctrina, pág. 597</a>
+          </li>
+          <li id="id3407766">
+            <a href="n603.xml">Abusos de autoridad, corrupción económica, depravación moral, pág. 603</a>
+          </li>
+          <li id="id3407780">
+            <a href="n621.xml">Los hijos mestizos de los padres de doctrina, pág. 621</a>
+          </li>
+          <li id="id3407793">
+            <a href="n624.xml">Sermones de los padres de estos reinos, pág. 624</a>
+          </li>
+          <li id="id3407805">
+            <a href="n628.xml">Los deberes sacramentales de los padres de doctrina, pág. 628</a>
+          </li>
+          <li id="id3407818">
+            <a href="n640.xml">Cristianísimos padres de doctrina y santas órdenes religiosas de este reino, pág. 640</a>
+          </li>
+          <li id="id3407833">
+            <a href="n654.xml">Fiestas solemnes que se han de guardar en este reino, pág. 654</a>
+          </li>
+          <li id="id3407846">
+            <a href="n658.xml">Frailes soberbiosos de este reino, pág. 658</a>
+          </li>
+          <li id="id3407858">
+            <a href="n664.xml">Ofrendas y misas que se exigen a los indios, pág. 664</a>
+          </li>
+          <li id="id3407871">
+            <a href="n669.xml">Procedimiento para la petición de justicia, pág. 669</a>
+          </li>
+          <li id="id3407884">
+            <a href="n673.xml">Prólogo a los padres de doctrina, pág. 673</a>
+          </li>
+          <li id="id3407897">
+            <a href="n676.xml">Los auxiliares andinos de doctrina, pág. 676</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3407911">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3407911')">
+	  +
+	</a>
+        <a href="n689.xml">
+                24. El capítulo de los visitadores de la iglesia (689-716)
+              </a>
+        <ul id="id3407911" style="display:none; list-style-type:none">
+          <li id="id3407928">
+            <a href="n690.xml">La visita general de Cristóbal de Albornoz, pág. 690</a>
+          </li>
+          <li id="id3406378">
+            <a href="n693.xml">Cómo recibir a los señores visitadores, pág. 693</a>
+          </li>
+          <li id="id3406390">
+            <a href="n699.xml">Propuestas para la reforma de las visitas, pág. 699</a>
+          </li>
+          <li id="id3406403">
+            <a href="n705.xml">Arancel de comestibles y ganado en este reino, pág. 705</a>
+          </li>
+          <li id="id3406416">
+            <a href="n709.xml">Alegoría de las autoridades que los indios temen, pág. 709</a>
+          </li>
+          <li id="id3406429">
+            <a href="n711.xml">El buen gobierno eclesiástico, pág. 711</a>
+          </li>
+          <li id="id3406441">
+            <a href="n714.xml">Prólogo a los ilustres reverendos de este reino, pág. 714</a>
+          </li>
+          <li id="id3406454">
+            <a href="n715.xml">Declaración del autor de este libro y corónica, pág. 715</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3406470">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3406470')">
+	  +
+	</a>
+        <a href="n717.xml">
+                25. El capítulo de los negros africanos (717-725)
+              </a>
+        <ul id="id3406470" style="display:none; list-style-type:none">
+          <li id="id3406486">
+            <a href="n725.xml">Prólogo a los negros y las negras esclavos, pág. 725</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3406501">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3406501')">
+	  +
+	</a>
+        <a href="n726.xml">
+                26. El capítulo de mala reprensión y diálogos satíricos (726-740)
+              </a>
+        <ul id="id3406501" style="display:none; list-style-type:none">
+          <li id="id3406517">
+            <a href="n726.xml">Malas reprensiones contra los indios, pág. 726</a>
+          </li>
+          <li id="id3406530">
+            <a href="n728.xml">Pláticas de los pretenciosos, pág. 728</a>
+          </li>
+          <li id="id3406542">
+            <a href="n732.xml">Tratos, pág. 732</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3406556">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3406556')">
+	  +
+	</a>
+        <a href="n741.xml">
+                27. El capítulo de las sentencias de los cristianos ejemplares (741-751)
+              </a>
+        <ul id="id3406556" style="display:none; list-style-type:none">
+          <li id="id3406573">
+            <a href="n741.xml">Sentencias de caballeros principales y capitanes de este reino, pág. 741</a>
+          </li>
+          <li id="id3406586">
+            <a href="n744.xml">Sentencias de cristianísimos padres de la iglesia, pág. 744</a>
+          </li>
+          <li id="id3406599">
+            <a href="n747.xml">Sentencias del padre Martín de Ayala, hermano del autor, pág. 747</a>
+          </li>
+          <li id="id3406613">
+            <a href="n750.xml">Sentencias del padre del autor, don Martín Guaman Malqui de Ayala, pág. 750</a>
+          </li>
+          <li id="id3406626">
+            <a href="n751.xml">Prólogo a los lectores que buscan oficios y beneficios en este reino, pág. 751</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3406642">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3406642')">
+	  +
+	</a>
+        <a href="n752.xml">
+                28. El capítulo de los príncipes, señores principales y otros cargos hereditarios andinos (752-805)
+              </a>
+        <ul id="id3406642" style="display:none; list-style-type:none">
+          <li id="id3406660">
+            <a href="n752.xml">Príncipes naturales, descendientes de los Yngas de estos reinos, pág. 752</a>
+          </li>
+          <li id="id3406674">
+            <a href="n756.xml">Señores principales, pág. 756</a>
+          </li>
+          <li id="id3406686">
+            <a href="n762.xml">Mandones y mandoncillos de indios tributarios, pág. 762</a>
+          </li>
+          <li id="id3406699">
+            <a href="n772.xml">Reinas, o quya, y señoras de principales, pág. 772</a>
+          </li>
+          <li id="id3406712">
+            <a href="n776.xml">Denuncia de los señores principales y recomendaciones para su reforma, pág. 776</a>
+          </li>
+          <li id="id3406726">
+            <a href="n791.xml">Señores principales que dan mal ejemplo, pág. 791</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3406740">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3406740')">
+	  +
+	</a>
+        <a href="n806.xml">
+                29. El capítulo de los administradores locales andinos en este reino (806-833)
+              </a>
+        <ul id="id3406740" style="display:none; list-style-type:none">
+          <li id="id3406758">
+            <a href="n807.xml">Alcaldes mayores de cabildo, pág. 807</a>
+          </li>
+          <li id="id3406770">
+            <a href="n809.xml">Alcaldes ordinarios de su Magestad, pág. 809</a>
+          </li>
+          <li id="id3406782">
+            <a href="n815.xml">Administradores despenseros andinos, pág. 815</a>
+          </li>
+          <li id="id3406795">
+            <a href="n817.xml">Alguacil mayor y menor, pág. 817</a>
+          </li>
+          <li id="id3406807">
+            <a href="n819.xml">Pregoneros y verdugos, pág. 819</a>
+          </li>
+          <li id="id3406819">
+            <a href="n821.xml">Mayordomos de las iglesias, las cofradías y los hospitales, pág. 821</a>
+          </li>
+          <li id="id3406832">
+            <a href="n823.xml">El teniente andino del corregidor, pág. 823</a>
+          </li>
+          <li id="id3406845">
+            <a href="n826.xml">Correones reales, pág. 826</a>
+          </li>
+          <li id="id3406857">
+            <a href="n829.xml">El escribano andino de cabildo, pág. 829</a>
+          </li>
+          <li id="id3406869">
+            <a href="n832.xml">Prólogo a los señores principales y administradores andinos, pág. 832</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3406885">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3406885')">
+	  +
+	</a>
+        <a href="n834.xml">
+                30. El capítulo de los indios de este reino (834-922)
+              </a>
+        <ul id="id3406885" style="display:none; list-style-type:none">
+          <li id="id3406901">
+            <a href="n834.xml">La policía y cristiandad de los indios de este reino, pág. 834</a>
+          </li>
+          <li id="id3406914">
+            <a href="n840.xml">Las oraciones que los indios han de rezar, pág. 840</a>
+          </li>
+          <li id="id3406927">
+            <a href="n853.xml">Sacramentos obligatorios y buenas obras de indios cristianos, pág. 853</a>
+          </li>
+          <li id="id3406940">
+            <a href="n862.xml">Leyes tradicionales de matrimonio, pág. 862</a>
+          </li>
+          <li id="id3406953">
+            <a href="n862.xml">Prestación de trabajo, mita, pág. 862</a>
+          </li>
+          <li id="id3406965">
+            <a href="n865.xml">Cazadores andinos, pág. 865</a>
+          </li>
+          <li id="id3406977">
+            <a href="n866.xml">Varias recomendaciones, pág. 866</a>
+          </li>
+          <li id="id3406989">
+            <a href="n871.xml">Indios haraganes, jugadores y ladrones, pág. 871</a>
+          </li>
+          <li id="id3409180">
+            <a href="n872.xml">Caciques falsos, pág. 872</a>
+          </li>
+          <li id="id3409192">
+            <a href="n874.xml">Importancia de las sementeras, pág. 874</a>
+          </li>
+          <li id="id3409204">
+            <a href="n875.xml">Necesidad de orden cristiano, pág. 875</a>
+          </li>
+          <li id="id3409217">
+            <a href="n877.xml">“La borrachera”, pág. 877</a>
+          </li>
+          <li id="id3409228">
+            <a href="n880.xml">Los hortelanos, pág. 880</a>
+          </li>
+          <li id="id3409240">
+            <a href="n883.xml">Por qué los indios se ausentan de sus pueblos, pág. 883</a>
+          </li>
+          <li id="id3409253">
+            <a href="n889.xml">Los indios que no guardan los mandamientos de Dios, pág. 889</a>
+          </li>
+          <li id="id3409266">
+            <a href="n898.xml">Los astrólogos andinos, pág. 898</a>
+          </li>
+          <li id="id3409278">
+            <a href="n901.xml">Propuestas para la reforma, pág. 901</a>
+          </li>
+          <li id="id3409290">
+            <a href="n916.xml">El autor explica cómo escribió este dicho libro, pág. 916</a>
+          </li>
+          <li id="id3409303">
+            <a href="n922.xml">Prólogo a los indios cristianos, pág. 922</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3409318">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3409318')">
+	  +
+	</a>
+        <a href="n923.xml">
+                31. El capítulo de las consideraciones (923-973)
+              </a>
+        <ul id="id3409318" style="display:none; list-style-type:none">
+          <li id="id3409334">
+            <a href="n925.xml">La creación del cielo y el mundo, y los primeros indios de este reino, pág. 925</a>
+          </li>
+          <li id="id3409347">
+            <a href="n931.xml">La obediencia en los tiempos del Ynga y en los primeros años de la conquista, pág. 931</a>
+          </li>
+          <li id="id3409362">
+            <a href="n934.xml">La cristiandad de los indios y cómo los maltratan, pág. 934</a>
+          </li>
+          <li id="id3409375">
+            <a href="n940.xml">Los negros muy cristianos y los malos, pág. 940</a>
+          </li>
+          <li id="id3409387">
+            <a href="n943.xml">La corrupción de los indios y la multiplicación de los mestizos, pág. 943</a>
+          </li>
+          <li id="id3409401">
+            <a href="n947.xml">La gracia de Dios, la Virgen María y los santos, pág. 947</a>
+          </li>
+          <li id="id3409414">
+            <a href="n950.xml">La soberbia de don Francisco de Toledo, pág. 950</a>
+          </li>
+          <li id="id3409427">
+            <a href="n953.xml">La gloria del cielo y las penas del infierno, pág. 953</a>
+          </li>
+          <li id="id3409440">
+            <a href="n962.xml">La gran magestad de los monarcas Topa Ynga Yupanqui y Felipe III, pág. 962</a>
+          </li>
+          <li id="id3409453">
+            <a href="n969.xml">La historia bíblica y el Día del Juicio, pág. 969</a>
+          </li>
+          <li id="id3409466">
+            <a href="n972.xml">Prólogo a los lectores de las consideraciones, pág. 972</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3409481">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3409481')">
+	  +
+	</a>
+        <a href="n974.xml">
+                32. El capítulo del diálogo de Guaman Poma con el rey (974-999)
+              
+[Ver también cap. 31., “El capítulo de las consideraciones”, pág. 944-948]</a>
+        <ul id="id3409481" style="display:none; list-style-type:none">
+          <li id="id3409501">
+            <a href="n998.xml">Prólogo al rey Felipe III, pág. 998</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3409515">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3409515')">
+	  +
+	</a>
+        <a href="n1000.xml">
+                33. El capítulo de este reino y sus ciudades y villas (1000-1087)
+              </a>
+        <ul id="id3409515" style="display:none; list-style-type:none">
+          <li id="id3409531">
+            <a href="n1000.xml">Mapa Mundi de las Indias del Perú, pág. 1000</a>
+          </li>
+          <li id="id3409544">
+            <a href="n1006.xml">La ciudad de Santa Fe de Bogotá, pág. 1006</a>
+          </li>
+          <li id="id3409556">
+            <a href="n1008.xml">La ciudad de Popayán, pág. 1008</a>
+          </li>
+          <li id="id3409568">
+            <a href="n1010.xml">La ciudad de Atres, pág. 1010</a>
+          </li>
+          <li id="id3409580">
+            <a href="n1012.xml">La ciudad y Audiencia de Quito, pág. 1012</a>
+          </li>
+          <li id="id3409593">
+            <a href="n1014.xml">La villa de Riobamba, pág. 1014</a>
+          </li>
+          <li id="id3409605">
+            <a href="n1016.xml">La ciudad de Cuenca, pág. 1016</a>
+          </li>
+          <li id="id3409617">
+            <a href="n1018.xml">La ciudad de Loxa, pág. 1018</a>
+          </li>
+          <li id="id3409629">
+            <a href="n1020.xml">La ciudad de Cajamarca, “ciudad de Atagualpa Ynga”, pág. 1020</a>
+          </li>
+          <li id="id3409642">
+            <a href="n1022.xml">La villa de Conchocos, minas de plata, pág. 1022</a>
+          </li>
+          <li id="id3409655">
+            <a href="n1024.xml">La villa de Paita, pág. 1024</a>
+          </li>
+          <li id="id3409667">
+            <a href="n1026.xml">La ciudad de Trujillo, pág. 1026</a>
+          </li>
+          <li id="id3409679">
+            <a href="n1028.xml">La villa de Zaña, pág. 1028</a>
+          </li>
+          <li id="id3409690">
+            <a href="n1030.xml">La villa de Puerto Viejo, pág. 1030</a>
+          </li>
+          <li id="id3409703">
+            <a href="n1032.xml">La ciudad de Guayaquil, pág. 1032</a>
+          </li>
+          <li id="id3409715">
+            <a href="n1034.xml">La ciudad de Cartagena, pág. 1034</a>
+          </li>
+          <li id="id3409727">
+            <a href="n1036.xml">La ciudad de Panamá, audiencia y obispado de la iglesia, pág. 1036</a>
+          </li>
+          <li id="id3409740">
+            <a href="n1038.xml">La ciudad de Guanoco, “águila y león real, waman puma”, pág. 1038</a>
+          </li>
+          <li id="id3409754">
+            <a href="n1040.xml">La Ciudad de los Reyes de Lima, audiencia real y corte, cabeza mayor del reino de las Indias, residencia del virrey y arzobispado de la iglesia, pág. 1040</a>
+          </li>
+          <li id="id3409771">
+            <a href="n1042.xml">La villa de Callau, puerto de Lima, pág. 1042</a>
+          </li>
+          <li id="id3409783">
+            <a href="n1044.xml">La villa de Camaná, pág. 1044</a>
+          </li>
+          <li id="id3409795">
+            <a href="n1046.xml">La villa de Cañete, pág. 1046</a>
+          </li>
+          <li id="id3409807">
+            <a href="n1048.xml">La villa de Piscuy, de mucho pescado, pág. 1048</a>
+          </li>
+          <li id="id3409820">
+            <a href="n1050.xml">La villa de Ica, de los mejores vinos, pág. 1050</a>
+          </li>
+          <li id="id3409832">
+            <a href="n1052.xml">La villa de La Nasca, tierra de vino, pág. 1052</a>
+          </li>
+          <li id="id3409845">
+            <a href="n1054.xml">La villa de Castrovirreina, minas de plata, pág. 1054</a>
+          </li>
+          <li id="id3409858">
+            <a href="n1056.xml">La villa de Oropesa de Guanca Bilca, minas de azogue, pág. 1056</a>
+          </li>
+          <li id="id3409871">
+            <a href="n1058.xml">La ciudad de Guamanga, “fundada por el qhapaq apu don Martín de Ayala”, pág. 1058</a>
+          </li>
+          <li id="id3409885">
+            <a href="n1060.xml">La ciudad del Cuzco, cabeza y corte real de los doce reyes Yngas de este reino, y obispado de la iglesia, pág. 1060</a>
+          </li>
+          <li id="id3409901">
+            <a href="n1062.xml">La ciudad de Arequipa, pág. 1062</a>
+          </li>
+          <li id="id3409913">
+            <a href="n1064.xml">La villa de Arica, pág. 1064</a>
+          </li>
+          <li id="id3409924">
+            <a href="n1068.xml">La villa rica imperial de Potosí, donde la corona y la iglesia son defendidas por el Ynga y sus cuatro reyes, pág. 1068</a>
+          </li>
+          <li id="id3409940">
+            <a href="n1070.xml">La ciudad de Chuquisaca, audiencia real y obispado, pág. 1070</a>
+          </li>
+          <li id="id3409953">
+            <a href="n1072.xml">La ciudad de Chuquiyabo, pág. 1072</a>
+          </li>
+          <li id="id3409965">
+            <a href="n1074.xml">La villa de Misque, pág. 1074</a>
+          </li>
+          <li id="id3409977">
+            <a href="n1076.xml">La ciudad de Santiago de Chile, obispado, pág. 1076</a>
+          </li>
+          <li id="id3409990">
+            <a href="n1078.xml">La pukara de los indígenas y la fortaleza cristiana de Santa Cruz de Chile, pág. 1078</a>
+          </li>
+          <li id="id3410004">
+            <a href="n1080.xml">La ciudad de Tucumán, obispado, pág. 1080</a>
+          </li>
+          <li id="id3410017">
+            <a href="n1082.xml">La ciudad de Paraguay, obispado, pág. 1082</a>
+          </li>
+          <li id="id3410029">
+            <a href="n1083.xml">Las provincias de estos reinos, pág. 1083</a>
+          </li>
+          <li id="id3410042">
+            <a href="n1085.xml">Prólogo a los lectores cristianos que viven en estos reinos de las Indias, pág. 1085</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3410058">
+        <a href="n1088.xml">
+                34. El capítulo de las crónicas anteriores (1088-1091)
+              </a>
+      </li>
+      <li id="id3410072">
+        <a href="n1092.xml">
+                35. El capítulo de los mesones, o tanpu, en el camino real (1092-1103)
+              </a>
+      </li>
+      <li id="id3410087">
+        <a href="n1104.xml">
+                36. El capítulo del viaje del autor a Lima (1104-1139)
+              </a>
+      </li>
+      <li id="id3410101">
+        <a title="Klicka för att öppna sektion" onClick="openDisplay('id3410101')">
+	  +
+	</a>
+        <a href="n1140.xml">
+                37. El capítulo de los meses del año (1140-1178) (Ver también cap. 11.)
+              </a>
+        <ul id="id3410101" style="display:none; list-style-type:none">
+          <li id="id3410118">
+            <a href="n1140.xml">Los meses del año, pág. 1140</a>
+          </li>
+          <li id="id3410130">
+            <a href="n1141.xml">Enero, tiempo de lluvias y de aporcar, pág. 1141</a>
+          </li>
+          <li id="id3410143">
+            <a href="n1144.xml">Febrero, tiempo de vigilar el maíz por la noche, pág. 1144</a>
+          </li>
+          <li id="id3410156">
+            <a href="n1147.xml">Marzo, tiempo de expulsar los papagayos del maíz, pág. 1147</a>
+          </li>
+          <li id="id3410169">
+            <a href="n1150.xml">Abril, maduración del maíz, tiempo de protegerlo de los ladrones, pág. 1150</a>
+          </li>
+          <li id="id3410183">
+            <a href="n1153.xml">Mayo, tiempo de segar, de amontonar el maíz, pág. 1153</a>
+          </li>
+          <li id="id3410196">
+            <a href="n1156.xml">Junio, tiempo del turno de la cava de papa, pág. 1156</a>
+          </li>
+          <li id="id3410209">
+            <a href="n1159.xml">Julio, mes de llevarse maíz y papa de cosecha, pág. 1159</a>
+          </li>
+          <li id="id3410222">
+            <a href="n1162.xml">Agosto, tiempo de abrir las tierras, pág. 1162</a>
+          </li>
+          <li id="id3410234">
+            <a href="n1165.xml">Septiembre, ciclo de sembrar maíz, pág. 1165</a>
+          </li>
+          <li id="id3410247">
+            <a href="n1168.xml">Octubre, tiempo de ojear las sementeras, pág. 1168</a>
+          </li>
+          <li id="id3410260">
+            <a href="n1171.xml">Noviembre, tiempo de regar el maíz, de escasez de agua, tiempo de calor, pág. 1171</a>
+          </li>
+          <li id="id3410274">
+            <a href="n1174.xml">Diciembre, tiempo de sembrar papas y uqa, tubérculos, pág. 1174</a>
+          </li>
+          <li id="id3410287">
+            <a href="n1178.xml">A los lectores cristianos del mundo, pág. 1178</a>
+          </li>
+        </ul>
+      </li>
+      <li id="id3410302">
+        <a href="n1179.xml">
+                38. “Tabla de la dicha corónica” (1179-1187)
+              </a>
+      </li>
+      <li id="id3410316">
+        <a href="n1188.xml">
+                39. Fin de la Nueva corónica y buen gobierno (1188-1189)
+              </a>
+      </li>
+    </ul>
+    <div class="main">
+      <p>
+                            Sorry, there are no data in Transcription mode. Please select Facsimile mode on the sidebar.
+                        </p>
+    </div>
+  </body>
+</html>
