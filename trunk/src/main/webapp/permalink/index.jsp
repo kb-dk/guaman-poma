@@ -63,7 +63,7 @@ if( request.getParameter("info") != null) {
   }
 }
 
-String metsPath  = "file:/kb/data/mets/poma/";
+String metsPath  = "http://localhost:8080/guaman-poma/data/";
 // String metsPath  = "http://img.kb.dk/mets/poma/";
 // String metsPath  = "http://udvikling.kb.dk/metsnavigator/poma/";
 String infoPages = metsPath + "www-files/";

@@ -21,5 +21,6 @@ xsltproc render-pages.xsl tei/Poma-parsed.xml
 mkdir -p "$DEST"
 cp -r images pages www-files $DEST
 cp  toc.html.en toc.html.es  table-of-images.html.en table-of-images.html.es "$DEST"
+cp  make-page.xsl $DEST
 
 
