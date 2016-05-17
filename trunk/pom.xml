@@ -40,5 +40,12 @@
       <artifactId>saxpath</artifactId>
       <version>1.0-FCS</version>
     </dependency>
+<!-- http://mvnrepository.com/artifact/xalan/xalan -->
+<dependency>
+    <groupId>xalan</groupId>
+    <artifactId>xalan</artifactId>
+    <version>2.7.2</version>
+</dependency>
+
   </dependencies>
 </project>
