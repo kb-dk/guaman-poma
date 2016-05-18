@@ -1,0 +1,31 @@
+#!/usr/bin/perl -w
+
+# script for running the xsl_indexer
+# Author Sigfrid Lundberg slu@kb.dk
+# Last revised $Date: 2010/06/23 09:42:43 $ by $Author: slu $
+# $Id: xsl_index,v 1.5 2010/06/23 09:42:43 slu Exp $
+
+use strict;
+
+my $javadir = #'/home/slu/jars';
+    '/home/sigge/projects/more_lucene/xslt_indexer/lib';
+my $javahome = $ENV{'JAVA_HOME'};
+my $java = "$javahome/bin/java -client -classpath ";
+
+my $classpath = join ':',
+    ("$javadir/../bin/dk.kb.dup.xslt_index.jar",
+     "$javadir/xercesImpl.jar",
+     "$javadir/lucene-core-3.0.2.jar",
+     "$javadir/dom4j-1.6.1.jar",
+     "$javadir/xalan.jar",
+     "$javadir/java-getopt-1.0.13.jar"
+     );
+
+my $start = time();
+
+my $main = " dk.kb.dup.xsltIndexer.Driver ";
+print `date`."\n";
+system "$java $classpath $main @ARGV";
+print `date`."\nTime consumed ";
+print time() - $start;
+print " seconds\n";
