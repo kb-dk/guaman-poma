@@ -7,19 +7,19 @@
 
 use strict;
 
-my $javadir = #'/home/slu/jars';
-    '/home/sigge/projects/more_lucene/xslt_indexer/lib';
+my $javadir = '../xslt-indexer/';
 my $javahome = $ENV{'JAVA_HOME'};
 my $java = "$javahome/bin/java -client -classpath ";
 
 my $classpath = join ':',
-    ("$javadir/../bin/dk.kb.dup.xslt_index.jar",
-     "$javadir/xercesImpl.jar",
-     "$javadir/lucene-core-3.0.2.jar",
-     "$javadir/dom4j-1.6.1.jar",
-     "$javadir/xalan.jar",
-     "$javadir/java-getopt-1.0.13.jar"
-     );
+    ("$javadir/lib/java-getopt-1.0.13.jar",
+     "$javadir/lib/lucene-core-3.6.1.jar",
+     "$javadir/lib/xalan-2.7.2.jar",
+     "$javadir/lib/dom4j-1.6.1.jar",
+     "$javadir/target/xslt-indexer-1.0.jar",
+     "$javadir/lib/xercesImpl-2.9.1.jar",
+     "$javadir/lib/serializer-2.7.2.jar"
+);
 
 my $start = time();
 
