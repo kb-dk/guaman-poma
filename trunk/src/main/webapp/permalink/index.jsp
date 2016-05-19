@@ -156,7 +156,7 @@ transformer.setParameter("xImageContents",xImageContentList);
 if(request.getParameter("q") != null) {
 
     String query_path = "http://localhost:8080"
-                        + "/guaman-poma/poma-search-response.jsp";
+                        + "/guaman-poma/permalink/poma-search-response.jsp";
 
     String query_url = "q=" + request.getParameter("q");
 

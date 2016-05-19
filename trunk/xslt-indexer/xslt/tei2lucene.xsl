@@ -187,7 +187,7 @@ $Id: tei2lucene.xsl,v 1.8 2007/04/23 10:58:22 slu Exp $
     <xsl:param name="lang" select="'es'"/>
     <xsl:param name="page" select="'0'"/>
     <xsl:value-of select="IndexLoader:add_field('identifier',
-			              concat('http://www.kb.dk/permalink/2006/',
+			              concat('/permalink/2006/',
 				      'poma/',
 				      $page,'/'),
 				      'store.yes',
