@@ -27,7 +27,7 @@ mkdir -p $DEST
 rm -rf "$WEBINF/poma_index"
 cp -r poma_index $WEBINF
 cp -r images pages www-files $DEST
-cp  toc.html.en toc.html.es  table-of-images.html.en table-of-images.html.es "$DEST"
+cp  toc.html.en toc.html.es  table-of-images.html.en table-of-images.html.es toc.xml.en  toc.xml.es "$DEST"
 cp  make-page.xsl $DEST
 
 
