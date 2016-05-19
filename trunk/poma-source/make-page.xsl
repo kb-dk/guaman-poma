@@ -200,6 +200,9 @@ $Id: make-page.xsl,v 1.14 2008/10/28 10:12:22 slu Exp $
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
       <title>
+
+	<xsl:value-of select="$info"/>
+
 	<xsl:choose>
 	  <xsl:when test="$info">
 	    <xsl:choose>

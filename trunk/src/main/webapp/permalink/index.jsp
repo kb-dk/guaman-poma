@@ -74,18 +74,18 @@ String xsl = "make-page.xsl";
 String imageList = "table-of-images.html";
 String textList  = "toc.html";
 
-String xImageList = "table-of-images.xml";
-String xTextList  = "toc.xml";
+String xImageList = "table-of-images." + lang +  ".xml";
+String xTextList  = "toc." + lang +  ".xml";
 
 String toc       = textList;
 String tocUri    = "";
-String xContent  = metsPath + xTextList  + "." + lang;
+String xContent  = metsPath + xTextList;
 
 if(request.getParameter("mode") != null && request.getParameter("mode").equalsIgnoreCase("image")) {
     toc      = imageList;    
-    xContent = metsPath + xImageList + "." + lang;
+    xContent = metsPath + xImageList;
 }
-String xImageContentList = metsPath + xImageList + "." + lang;
+String xImageContentList = metsPath + xImageList;
 tocUri = metsPath + toc + "." + lang;
 
 String xslUrl = metsPath + xsl;
