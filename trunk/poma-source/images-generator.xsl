@@ -14,7 +14,6 @@
 	      encoding="UTF-8" />
 
   <xsl:template match="/">
-    <div>
       <xsl:for-each select="/m:mets/m:structMap/m:div[@DMDID='md-root']|
 			    /m:mets/m:structMap[@type='physical']/m:div/m:div">
 	<xsl:variable name="ourfileid">
@@ -91,7 +90,6 @@
 	  </exsl:document>
 	</xsl:if>
       </xsl:for-each>
-    </div>
   </xsl:template>
 
   <xsl:template match="md:mods">

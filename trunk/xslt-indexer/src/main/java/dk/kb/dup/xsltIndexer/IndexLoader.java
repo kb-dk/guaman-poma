@@ -64,15 +64,6 @@ public class IndexLoader
 	} else {
 	    this.writeDebug("update index in " + this.index_directory + "\n",0);
 	}  
-/*	try {
-	    this.writer = new IndexWriter(this.index_directory,
-					  this.analyzer,
-					  this.indexing_mode.equalsIgnoreCase("create"));
-	}
-	catch(IOException e) 
-	{
-	    e.printStackTrace();
-	    }*/
     }
   
     /**

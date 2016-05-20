@@ -182,13 +182,6 @@ public class Driver
 	    
 
 	if(transformer != null) {
-	    try{
-		reader   = IndexReader.open(directory);
-		transformer.setParameter("reader",reader);
-	    }
-	    catch(Exception e) {
-		e.printStackTrace();
-	    }
 	    SimpleAnalyzer analyzer        = new SimpleAnalyzer();
 	    transformer.setParameter("analyzer",analyzer);
 	    try {
@@ -196,10 +189,18 @@ public class Driver
 					 analyzer,
 					 mode.equalsIgnoreCase("create"),
 					 org.apache.lucene.index.IndexWriter.MaxFieldLength.UNLIMITED);
+		writer.commit();
 		transformer.setParameter("writer",writer);
 	    }
 	    catch(IOException e) 
 	    {
+		e.printStackTrace();
+	    }
+	    try{
+		reader   = IndexReader.open(directory);
+		transformer.setParameter("reader",reader);
+	    }
+	    catch(Exception e) {
 		e.printStackTrace();
 	    }
 	}
