@@ -26,7 +26,7 @@ mkdir  -p "$WEBINF/poma_index"
 ../xslt-indexer/scripts/xsl_index  \
     -x ../xslt-indexer/xslt/tei2lucene.xsl \
     -c "$WEBINF/poma_index"  \
-    -d ./tei/Poma-parsed.xml -v 3
+    -d ./tei/Poma-parsed.xml -v 0
 
 # ../xslt-indexer/scripts/xsl_index  \
 #    -x ../xslt-indexer/xslt/tei2lucene.xsl \
