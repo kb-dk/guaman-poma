@@ -201,8 +201,6 @@ $Id: make-page.xsl,v 1.14 2008/10/28 10:12:22 slu Exp $
 
       <title>
 
-	<xsl:value-of select="$info"/>
-
 	<xsl:choose>
 	  <xsl:when test="$info">
 	    <xsl:choose>
