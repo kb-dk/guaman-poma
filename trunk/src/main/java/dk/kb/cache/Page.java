@@ -7,6 +7,7 @@ import javax.cache.CacheManager;
 import javax.cache.Cache;
 import javax.cache.expiry.*;
 import javax.cache.spi.*;
+import static javax.cache.expiry.Duration.ONE_DAY;
 import static javax.cache.expiry.Duration.ONE_HOUR;
 import static javax.cache.expiry.Duration.ONE_MINUTE;
 import static javax.cache.expiry.Duration.ZERO;
@@ -26,7 +27,7 @@ public class Page
 
 	MutableConfiguration<String, String> config = new MutableConfiguration<>();
         config.setStoreByValue(true)
-	    .setExpiryPolicyFactory(AccessedExpiryPolicy.factoryOf(ONE_HOUR))
+	    .setExpiryPolicyFactory(AccessedExpiryPolicy.factoryOf(ONE_DAY))
 	    .setStatisticsEnabled(true);
 
 	//create the cache
