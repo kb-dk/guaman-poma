@@ -70,7 +70,10 @@ if(xmlString == null) {
 	}
     }
 
-    String metsPath  = "http://localhost:8080/guaman-poma/data/";
+    String infoMetsPath  = "http://localhost:8080/guaman-poma/data/";
+
+    String metsPath = "file://" + request.getSession().getServletContext().getRealPath( "/" )+"/data/";
+
     String infoPages = metsPath + "www-files/";
     String html      = metsPath + "pages/";
     String image     = metsPath + "images/";
@@ -227,3 +230,12 @@ out.println(xmlString);
 // out.println(result.getOutputStream());
 
 %>
+
+<!-- 
+<%
+out.println( request.getPathTranslated() );
+out.println( request.getPathInfo()       );
+out.println( request.getContextPath()    );
+
+%>
+-->
