@@ -83,7 +83,7 @@ $Id: make-page.xsl,v 1.14 2008/10/28 10:12:22 slu Exp $
 	      indent="yes"
 	      method="xml"
 	      encoding="UTF-8"
-	      media-type="text/html; charset=UTF-8"
+	      media-type="application/xhtml+xml; charset=UTF-8"
 	      doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN"
 	      doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" />
 
@@ -186,7 +186,7 @@ $Id: make-page.xsl,v 1.14 2008/10/28 10:12:22 slu Exp $
   </xsl:template>
 
   <xsl:template match="/">
-    <html xml:lang="{$lang}" lang="{$lang}">
+    <html xml:lang="{$lang}" lang="{$lang}" xmlns="http://www.w3.org/1999/xhtml">
       <xsl:apply-templates/>
     </html>
   </xsl:template>
@@ -197,7 +197,7 @@ $Id: make-page.xsl,v 1.14 2008/10/28 10:12:22 slu Exp $
 
   <xsl:template match="head">
     <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta charset="UTF-8" />
 
       <title>
 
