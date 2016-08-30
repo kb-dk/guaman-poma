@@ -136,9 +136,18 @@ if(xmlString == null) {
     String metsUrl = metsPath + "poma-mets.xml";
 
     java.net.URL hdoc = new java.net.URL(html);
-    org.dom4j.io.SAXReader xreader = new org.dom4j.io.SAXReader();
-    org.dom4j.io.DocumentSource source =
-	new org.dom4j.io.DocumentSource(xreader.read(hdoc));
+
+    java.io.InputStream input = hdoc.openStream();
+
+
+    javax.xml.parsers.DocumentBuilderFactory dfactory  = javax.xml.parsers.DocumentBuilderFactory.newInstance();
+
+    dfactory.setNamespaceAware(true);
+    // dfactory.setXIncludeAware(true);
+
+    javax.xml.parsers.DocumentBuilder dBuilder = dfactory.newDocumentBuilder();
+
+    javax.xml.transform.dom.DOMSource source = new javax.xml.transform.dom.DOMSource(dBuilder.parse(input));
 
     java.io.StringWriter xmlOutWriter = new java.io.StringWriter();
 
