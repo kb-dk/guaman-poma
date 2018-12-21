@@ -261,6 +261,23 @@ $Id: make-page.xsl,v 1.14 2008/10/28 10:12:22 slu Exp $
       </style>
       <style type="text/css" media="print">@import "css/print.css";</style>
 
+      <script>
+	<xsl:text>
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-1269676-1']);
+	  _gaq.push (['_gat._anonymizeIp']);
+	  _gaq.push(['_trackPageview']);
+	  _gaq.push(['_setDomainName', 'www.kb.dk']);
+
+	  (function() {
+	  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</xsl:text>
+      </script>
+
+
     </head>
   </xsl:template>
 
@@ -641,7 +658,7 @@ $Id: make-page.xsl,v 1.14 2008/10/28 10:12:22 slu Exp $
       </tr>
     </table>
     <!-- Google Analytics www.kb.dk -->
-    <script 
+    <!-- script 
 	src="http://www.google-analytics.com/urchin.js" 
 	type="text/javascript">
       <xsl:text>
@@ -649,7 +666,7 @@ $Id: make-page.xsl,v 1.14 2008/10/28 10:12:22 slu Exp $
     </script>
     <script type="text/javascript">
       _uacct = "UA-1269676-1";_udn="www.kb.dk";urchinTracker();
-    </script>
+    </script -->
   </xsl:element>
 </xsl:template>
 
