@@ -34,7 +34,8 @@ dk.kb.cache.Page cpage = dk.kb.cache.Page.getInstance();
 
 String xmlString = cpage.getText(key);
 
-if(xmlString == null) {
+// if(xmlString == null) {
+if(true) {
 
     //
     // Handle and set some parameters
