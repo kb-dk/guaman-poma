@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.List;
+import org.apache.logging.log4j.*;
+// import org.apache.log4j.Logger;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.SimpleAnalyzer;
 import org.apache.lucene.analysis.TokenStream;
@@ -33,7 +35,7 @@ import org.apache.lucene.util.Version;
  */
 public class Searcher
 {
-
+    Logger log = LogManager.getLogger(Searcher.class);
     TopDocs resultset = null;
     IndexSearcher searcher = null;
     Analyzer analyzer = new SimpleAnalyzer(Version.LUCENE_36);
@@ -59,6 +61,7 @@ public class Searcher
     }
 
     public String getIndexDir () {
+	log.info("getIndexDir: " + this.indexdir);
         return this.indexdir;
     }
 
@@ -186,6 +189,7 @@ public class Searcher
                 }
             }
         }
+	log.info("getHits: " + hits.size() + " hits");
         return hits;
     }
 
