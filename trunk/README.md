@@ -1,5 +1,17 @@
 # How to build Guaman Poma Website
 
+I did successfully build and deploy this site December 21 2022, using
+
+```
+Apache Maven 3.6.3
+Maven home: /usr/share/maven
+Java version: 11.0.17, vendor: Ubuntu, runtime: /usr/lib/jvm/java-11-openjdk-amd64
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "5.15.0-56-generic", arch: "amd64", family: "unix"
+
+```
+
+
 ## Preamble
 
 You start by compiling the Lucene indexer. It lives in the directory `xslt-indexer`. Make
@@ -11,6 +23,8 @@ mvn install
 ```
 
 After successful build there should be a file called `xslt-indexer-1.0.jar`. It is used to build the Lucene index used in the service.
+
+The build seems to require `java 8`. The indexer is used only while building the app.
 
 ## Build the actual content
 
@@ -74,4 +88,11 @@ Copy the `guaman-poma-1.0-SNAPSHOT.war` to a servlet container near
 you, renaming it to guaman-poma.war.  Install the
 `apache-httpd/permalink.conf` in the corresponding httpd customized
 for you needs and you are done.
+
+If you deploy it on your local machine, you will find it on
+
+```
+http://localhost/permalink/2006/poma/info/en/frontpage.htm
+
+```
 
