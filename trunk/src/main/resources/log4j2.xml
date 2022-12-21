@@ -10,19 +10,19 @@
     </Appenders>
     <Loggers>
         <!-- avoid duplicated logs with additivity=false -->
-        <Logger additivity="false" name="infologger" level="INFO">
+        <Logger name="dk.kb.xobject.search.Searcher" level="INFO">
             <AppenderRef ref="LogToFile"/>
         </Logger>
-        <Logger  name="tracelogger" level="TRACE">
+        <Logger name="dk.kb.xobject.search.Searcher" level="DEBUG">
             <AppenderRef ref="LogToFile"/>
         </Logger>
-        <Logger  name="errorlogger" level="ERROR">
+        <Logger  name="dk.kb.cache.Page" level="DEBUG">
             <AppenderRef ref="LogToFile"/>
         </Logger>
-        <Logger  name="debuglogger" level="DEBUG">
+        <Logger  name="dk.kb.cache.Page" level="INFO">
             <AppenderRef ref="LogToFile"/>
         </Logger>
-        <Root level="INFO">
+        <Root level="DEBUG">
             <AppenderRef ref="LogToFile"/>
         </Root>
     </Loggers>
