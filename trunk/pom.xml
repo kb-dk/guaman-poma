@@ -23,8 +23,6 @@
 
   <properties>
     <ignite-spring-cache-ext.version>1.0.0</ignite-spring-cache-ext.version>
-    <spring.version> 
-    </spring.version>
     <ignite.version>2.9.0</ignite.version>
   </properties>
   

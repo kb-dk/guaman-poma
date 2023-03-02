@@ -640,16 +640,7 @@ $Id: make-page.xsl,v 1.14 2008/10/28 10:12:22 slu Exp $
         </td>
       </tr>
     </table>
-    <!-- Google Analytics www.kb.dk -->
-    <!-- script 
-	src="http://www.google-analytics.com/urchin.js" 
-	type="text/javascript">
-      <xsl:text>
-      </xsl:text>
-    </script>
-    <script type="text/javascript">
-      _uacct = "UA-1269676-1";_udn="www.kb.dk";urchinTracker();
-    </script -->
+
   </xsl:element>
 </xsl:template>
 
