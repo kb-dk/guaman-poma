@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.List;
+import org.apache.logging.log4j.*;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.SimpleAnalyzer;
 import org.apache.lucene.analysis.TokenStream;
@@ -33,9 +34,9 @@ import org.apache.lucene.util.Version;
  */
 public class Searcher
 {
-
+    Logger log = LogManager.getLogger(Searcher.class);
     TopDocs resultset = null;
-    IndexSearcher searcher = null;
+    IndexSearcher index_searcher = null;
     Analyzer analyzer = new SimpleAnalyzer(Version.LUCENE_36);
     SimpleHTMLFormatter formatter = null;
     Highlighter highlighter = null;
@@ -55,10 +56,12 @@ public class Searcher
     }
 
     public void setIndexDir (String dir) {
+	log.debug("set index dir: " + dir);
         this.indexdir = dir;
     }
 
     public String getIndexDir () {
+	log.debug("get index dir: " + this.indexdir);
         return this.indexdir;
     }
 
@@ -102,11 +105,14 @@ public class Searcher
 
     public boolean search(String querystring) throws java.io.IOException
     {
-        boolean success = false;
-
+	this.resultset = null;
+	
         Directory luceneDir = new SimpleFSDirectory(new File(indexdir));
+
+	log.info("query string = " + querystring);
+	
         IndexReader idr = MultiReader.open(luceneDir);
-        searcher = new IndexSearcher(idr);
+	index_searcher = new IndexSearcher(idr);
 
         //IndexReader i_reader = searcher.getIndexReader();
 
@@ -125,17 +131,18 @@ public class Searcher
             this.query = (Query)qp.parse(querystring);
         }
         catch(ParseException e) {
+	    log.info("query parser failed " + e.getMessage());
             e.printStackTrace();
         }
 
         if(query != null) {
             if(this.sort == null) {
-                this.resultset = searcher.search(this.query, 500);
+                this.resultset =  index_searcher.search(this.query, 500);
             } else {
-                this.resultset = searcher.search(this.query, 500 ,new Sort(this.sort));
+                this.resultset =  index_searcher.search(this.query, 500 ,new Sort(this.sort));
             }
         }
-
+	log.info("resultset says: " +  this.resultset.totalHits );
         return this.resultset != null;
     }
 
@@ -179,13 +186,14 @@ public class Searcher
 
             for(int i=from_hit;i<stop; i++) {
                 try{
-                    hits.add( searcher.doc(i)  );
+                    hits.add(  index_searcher.doc(i)  );
                 }
                 catch(IOException e) {
                     e.printStackTrace();
                 }
             }
         }
+	log.info("getHits: " + hits.size() + " hits");
         return hits;
     }
 

@@ -1,5 +1,6 @@
 package dk.kb.cache;
 
+import org.apache.logging.log4j.*;
 import javax.cache.*;
 import javax.cache.configuration.*;
 import javax.cache.Caching;
@@ -15,6 +16,7 @@ import static javax.cache.expiry.Duration.ZERO;
 public class Page
 {
 
+    Logger log = LogManager.getLogger(Page.class);
     private static Page page    = null;
 
     Cache<String, String> cache = null;
@@ -43,9 +45,12 @@ public class Page
 
     public String getText(String key) {
 	String val = this.cache.get(key);
+
 	if(val != null ) {
+	    log.info("text in cache");
 	    return val;
 	}
+	log.info("text is null");
 	return null;
     }
 

@@ -7,6 +7,7 @@ import java.util.regex.Pattern;
 import org.apache.lucene.analysis.SimpleAnalyzer;
 import org.apache.lucene.index.IndexReader;
 import org.apache.lucene.index.IndexWriter;
+import org.apache.lucene.util.Version;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
@@ -182,7 +183,7 @@ public class Driver
 	    
 
 	if(transformer != null) {
-	    SimpleAnalyzer analyzer        = new SimpleAnalyzer();
+	    SimpleAnalyzer analyzer = new SimpleAnalyzer(Version.LUCENE_36);
 	    transformer.setParameter("analyzer",analyzer);
 	    try {
 		writer = new IndexWriter(directory,
