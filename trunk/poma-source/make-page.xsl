@@ -304,7 +304,7 @@ $Id: make-page.xsl,v 1.14 2008/10/28 10:12:22 slu Exp $
 	     <xsl:choose>
 	       <xsl:when test="$lang = 'en'">
 		 <ul>
-                   <li><a href="/"><!--Home-->www.kb.dk</a></li>
+                   <li><a href="https://www.kb.dk/"><!--Home-->www.kb.dk</a></li>
 		   <li><a href="/permalink/2006/poma/info/en/foreword.htm">About the
 		   transcription</a></li>
 		   <li>

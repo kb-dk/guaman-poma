@@ -1,11 +1,11 @@
 # How to build Guaman Poma Website
 
-I did successfully build and deploy this site December 21 2022, using
+I did successfully build and deployed this site December 21 2022, using
 
 ```
 Apache Maven 3.6.3
 Maven home: /usr/share/maven
-Java version: 11.0.17, vendor: Ubuntu, runtime: /usr/lib/jvm/java-11-openjdk-amd64
+Java version: 1.8.0_362 and 11.0.17, vendor: Ubuntu, runtime: /usr/lib/jvm/java-11-openjdk-amd64
 Default locale: en_US, platform encoding: UTF-8
 OS name: "linux", version: "5.15.0-56-generic", arch: "amd64", family: "unix"
 
