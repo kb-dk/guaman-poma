@@ -283,7 +283,7 @@ $Id: make-page.xsl,v 1.14 2008/10/28 10:12:22 slu Exp $
 	<tr>
 <!--HEADER-->
           <td id="header">
-	    <a href="/"><img src="img/logo.gif" alt="Det Kongelige Bibliotek" border="0"/></a>
+	    <a href="https://www.kb.dk/"><img src="img/logo.gif" alt="Det Kongelige Bibliotek" border="0"/></a>
 	    <a href="javascript:increase(15);" title="" class="zoomOut">
 	    <xsl:text>
 	    </xsl:text>
