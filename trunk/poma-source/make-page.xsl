@@ -283,7 +283,7 @@ $Id: make-page.xsl,v 1.14 2008/10/28 10:12:22 slu Exp $
 	<tr>
 <!--HEADER-->
           <td id="header">
-	    <a href="https://www.kb.dk/"><img src="img/logo.gif" alt="Det Kongelige Bibliotek" border="0"/></a>
+	    <a href="https://www.kb.dk/"><img src="img/logo-navigation-header.svg" alt="Det Kgl. Bibliotek" border="0"/></a>
 	    <a href="javascript:increase(15);" title="" class="zoomOut">
 	    <xsl:text>
 	    </xsl:text>
@@ -321,7 +321,7 @@ $Id: make-page.xsl,v 1.14 2008/10/28 10:12:22 slu Exp $
 	       </xsl:when>
 	       <xsl:otherwise>
 		 <ul>
-		   <li><a href="/en/"><!--Inicio-->www.kb.dk</a></li>
+		   <li><a href="https://www.kb.dk/"><!--Inicio-->www.kb.dk</a></li>
 		   <li>
 		     <a href="/permalink/2006/poma/info/es/foreword.htm">Sobre la
 		     transcripción</a>
@@ -634,9 +634,8 @@ $Id: make-page.xsl,v 1.14 2008/10/28 10:12:22 slu Exp $
       <tr>
 <!--FOOTER-->
         <td id="footer">
-	  <p>Det Kongelige Bibliotek, Postbox 2149, DK-1016
-	  K&#xF8;benhavn K (+45) 33 47 47 47, kb@kb.dk EAN lokations
-	  nr: 5798 000795297</p>
+	  <p>Det Kgl. Bibliotek, Postbox 2149, DK-1016
+	  K&#xF8;benhavn K, (+45) 33 47 47 47, kb@kb.dk, EAN lokationsnr: 5798 000795297</p>
         </td>
       </tr>
     </table>

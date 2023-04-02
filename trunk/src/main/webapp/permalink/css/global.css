@@ -48,14 +48,15 @@ form{
 /* HEADER 
 ----------------------------------------------*/
 #header{
-	background:#FFF url(../img/headerBg.gif) repeat-x bottom left;
+	background:#002E70;
 	height:3.7500em;
 	border-bottom:1px solid #FFF;
 }
 #header img{
-	height:42px;
-	width:452px;
-	float:left; 
+	height:30px;
+	float:left;
+	margin-top: 0.85em;
+	margin-left: 1.575em;
 }
 #header .zoomIn, #header .zoomOut{
 	height:11px;
@@ -64,16 +65,16 @@ form{
 	margin-top:10px;
 }
 #header .zoomIn {
-	background:transparent url(../img/zoomIn.gif) no-repeat top left;
+	background:transparent url(../img/zoomIn.png) no-repeat top left;
 }
 #header .zoomOut {
-	background:transparent url(../img/zoomOut.gif) no-repeat top left;
+	background:transparent url(../img/zoomOut.png) no-repeat top left;
 	margin-right:10px;
 }
 /* NAV 
 ----------------------------------------------*/
 #nav{
-	background:#37535D;
+	background-color:#CAF0FE;
 	color:#FFF;
 	height:1.5000em;
 }
@@ -95,11 +96,12 @@ form{
 }
 #nav li a{
 	font-size:0.6250em;
+	font-weight: bold;
 	text-decoration: none;
-	color:#FFF;
+	color:#989898;
 	padding:0.2em 1.2em;
 	margin-right:0.1250em;
-	border-right:1px solid #FFF;
+	border-right:1px solid #989898;
 }
 #nav li a:hover{
 	background:#87989E;
