@@ -95,18 +95,16 @@ form{
 	border-right:none;
 }
 #nav li a{
-	font-size:0.6250em;
-	font-weight: bold;
+	font-family: noway, sans-serif;
+    font-size: 14px;
 	text-decoration: none;
-	color:#989898;
+	color:#002E70;
 	padding:0.2em 1.2em;
 	margin-right:0.1250em;
 	border-right:1px solid #989898;
 }
 #nav li a:hover{
-	background:#87989E;
-	border:none;
-	border-right:1px solid #87989E;
+	text-decoration: underline;
 }
 /* CONTENT 
 ----------------------------------------------*/
@@ -374,6 +372,11 @@ form{
 	margin:0 0.6250em 0.6250em 0.6250em;
 	float:left;
 	border:1px solid #E3EBE7;
+}
+#contentPage h1,
+#contentPage h2,
+#contentPage h3 {
+	margin-left: 9px;
 }
 #contentPage p{
 	font-size:0.6875em;
