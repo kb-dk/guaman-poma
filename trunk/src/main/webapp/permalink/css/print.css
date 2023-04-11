@@ -28,6 +28,10 @@ table{
 #header img{
 	margin-left:5px;
 }
+#header img.screen{
+	display: none;
+}
+
 /* NAV 
 ----------------------------------------------*/
 #nav{
