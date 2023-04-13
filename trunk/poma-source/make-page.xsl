@@ -635,7 +635,7 @@ $Id: make-page.xsl,v 1.14 2008/10/28 10:12:22 slu Exp $
 <!--FOOTER-->
         <td id="footer">
 	  <p>Det Kgl. Bibliotek, Postbox 2149, DK-1016
-	  K&#xF8;benhavn K, (+45) 33 47 47 47, kb@kb.dk, EAN lokationsnr: 5798 000795297</p>
+	  K&#xF8;benhavn K, (+45) 33 47 47 47, kb@kb.dk, EAN lokationsnr: 5798 000795297. <a href="https://www.kb.dk/was" target="_blank">Accessibility Statement</a></p>
         </td>
       </tr>
     </table>
