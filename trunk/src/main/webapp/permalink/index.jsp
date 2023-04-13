@@ -70,7 +70,7 @@ if(xmlString == null) {
 	}
     }
 
-    String infoMetsPath  = "http://localhost:8080/guaman-poma/data/";
+    String infoMetsPath  = "http://localhost:9091/guaman-poma/data/";
 
     String metsPath = "file://" + request.getSession().getServletContext().getRealPath( "/" )+"/data/";
 
@@ -174,7 +174,7 @@ if(xmlString == null) {
 
     if(request.getParameter("q") != null) {
 
-	String query_path = "http://localhost:8080"
+	String query_path = "http://localhost:9091"
 	    + "/guaman-poma/permalink/poma-search-response.jsp";
 
 	String query_url = "q=" + request.getParameter("q");
