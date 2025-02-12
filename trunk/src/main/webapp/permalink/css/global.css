@@ -395,7 +395,6 @@ form{
         padding:5px;
 }
 
-
 #contentPage .imgTxt{
 	border:1px solid #E3EBE7;
 	border-left:none;
@@ -406,6 +405,23 @@ form{
 	color:#FFF;
 	margin-left:50px;
 }
+
+#contentPage .bibLettersList a {
+	font-size: 1.3em;
+	padding-right: .6em;
+}
+#contentPage section#biblioList > div {
+	position: relative;
+}
+#contentPage section#biblioList > div > a[href] {
+	position: absolute;
+	left: 4em;
+	top: 1.1em;
+}
+#contentPage section#biblioList img {
+	border: 0;
+}
+
 
 /* FOOTER 
 ----------------------------------------------*/
